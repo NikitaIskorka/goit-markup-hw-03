@@ -1,0 +1,197 @@
+/* Цыетовая палитра */
+/* Primary text color #212121
+Secondary text color #757575
+alternative text color #FFFFFF
+accent color #2196F3
+
+
+bcg color #FFFFFF
+bcg alternative color #F5F4FA*/
+
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --alternative-text-color: #ffffff;
+  --accent-color: #2196f3;
+  --bcg-color: #ffffff;
+  --bcg-alternative-color: #f5f4fa;
+}
+/* all paige main formattiong */
+.page {
+  font-family: "Roboto", sans-serif;
+  color: var(--primary-text-color);
+  background-color: var(--bcg-color);
+}
+/* No dots on lists */
+.list {
+  list-style: none;
+}
+/* Отменяем подчеркивание у ссылки */
+a {
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+/* Header
+ */
+
+/* site navigation 
+and contacts 
+focus and hover */
+.site-nav :hover,
+.site-nav :focus {
+  color: var(--accent-color);
+}
+.contacts :hover,
+.contacts :focus {
+  color: var(--accent-color);
+}
+/* social pics  hover and focus !!!!!!!!!!!!!!!!!!!!!!!!!need to fix*/
+.social a:hover,
+.social a:focus {
+  color: var(--accent-color);
+}
+
+/* sie navigation text  */
+.site-nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}
+/* contacts text  */
+.contacts {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}
+/* allTitles H2 */
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/* Hero title */
+.hero-title {
+  outline: 1px solid rgb(173, 184, 29);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--alternative-text-color);
+}
+
+/* Hero button */
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--alternative-text-color);
+
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+/* features title*/
+.features-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+/* features text dsc */
+.features-text {
+  color: var(--secondary-text-color);
+
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+/* our works picture dsc */
+.work-name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+/* teammates names   */
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/* temmates proffession dsc */
+.features-text {
+  font-size: 16px;
+  line-height: 1.2;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-text-color);
+}
+/* Footer */
+.footer {
+  background-color: #2f303a;
+}
+/* Physical addres going with other color */
+.phys-address {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--alternative-text-color);
+}
+/* Subscibe tittle */
+.subscribe-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--alternative-text-color);
+}
+/* !!!!!!!!!!!!!!!!!!!!!!!!POrtfolio content!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* Portfolio filter effects hover and focus */
+.portfolio-filter :hover,
+.portfolio-filter :focus {
+  color: var(--accent-color);
+}
+/* name of works in portfolio */
+.portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+/* Work descriptions in portfolio */
+.portfolio-dsc {
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+/* text on pics  */
+.portfolio-text {
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+}
