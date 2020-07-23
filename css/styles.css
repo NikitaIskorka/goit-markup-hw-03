@@ -16,6 +16,9 @@ bcg alternative color #F5F4FA*/
   --bcg-color: #ffffff;
   --bcg-alternative-color: #f5f4fa;
 }
+/* * {
+  outline: solid darkslateblue; */
+
 /* all paige main formattiong */
 .page {
   font-family: "Roboto", sans-serif;
@@ -25,12 +28,29 @@ bcg alternative color #F5F4FA*/
 /* No dots on lists */
 .list {
   list-style: none;
+  padding: 0px;
+  margin: 0px;
 }
 /* Отменяем подчеркивание у ссылки */
 a {
   color: var(--primary-text-color);
   text-decoration: none;
 }
+/* Delete margin utility */
+.no-margin {
+  margin: 0px;
+}
+
+.container {
+  width: 1230px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
 /* Header
  */
 
@@ -50,13 +70,31 @@ focus and hover */
 .social a:focus {
   color: var(--accent-color);
 }
+/* Nsv contsiner */
+.navigation-container {
+  display: flex;
+  align-items: center;
+  padding: 25px 15px;
+  max-width: 1230px;
+  margin: 0 auto;
+}
+/* logo */
 
-/* sie navigation text  */
+.logo {
+  display: inline-block;
+}
+/* site navigation text  */
 .site-nav {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
+  display: flex;
+  margin-left: 85px;
+}
+
+.site-nav .item {
+  margin-left: auto;
 }
 /* contacts text  */
 .contacts {
@@ -64,6 +102,15 @@ focus and hover */
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
+
+  display: flex;
+  margin-left: auto;
+}
+.contacts .list {
+  display: flex;
+}
+.contacts .item {
+  margin: 0 auto;
 }
 /* allTitles H2 */
 .title {
@@ -73,9 +120,12 @@ focus and hover */
   text-align: center;
   letter-spacing: 0.03em;
 }
+/* Hero */
+.hero {
+  text-align: center;
+}
 /* Hero title */
 .hero-title {
-  outline: 1px solid rgb(173, 184, 29);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
@@ -89,19 +139,32 @@ focus and hover */
 
 /* Hero button */
 .button {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
+  padding: 10px 32px;
   color: var(--alternative-text-color);
-
+  display: inline-block;
   background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: 1px solid transparent;
+  min-width: 200px;
+  margin-top: 30px;
+}
+/* Features */
+.features .list {
+  display: flex;
+  justify-content: center;
+}
+.list .item {
+  margin-right: 30px;
+}
+.list .item:last-child {
+  margin-right: 0px;
+}
+
+.features {
+  text-align: center;
+}
+.features .title {
+  display: none;
 }
 /* features title*/
 .features-title {
@@ -110,6 +173,8 @@ focus and hover */
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 0px;
+  margin-top: 10px;
 }
 /* features text dsc */
 .features-text {
@@ -118,39 +183,108 @@ focus and hover */
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+.works-list {
+  display: flex;
+}
+.works-item + .works-item {
+  margin-left: 30px;
 }
 
+/* works title */
+.works .title {
+  margin-bottom: 0px;
+  margin-top: 94px;
+}
+/* Works exmples */
+.works .list {
+  margin-top: 50px;
+}
 /* our works picture dsc */
 .work-name {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
-  text-align: center;
+
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+/* team */
+.team {
+  background-color: #f5f4fa;
+}
+.team-item {
+  margin-left: 30px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-item:first-child {
+  margin-left: 0px;
+}
+/* team list */
+.team-list {
+  margin-top: 50px;
+  display: flex;
+}
+
 /* teammates names   */
 .team-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
 
-  text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  text-align: center;
 }
 /* temmates proffession dsc */
-.features-text {
+.team-text {
   font-size: 16px;
   line-height: 1.2;
 
-  text-align: center;
   letter-spacing: 0.03em;
 
   color: var(--secondary-text-color);
+  margin-top: 10px;
+  margin-bottom: 0px;
+  text-align: center;
 }
+/* social media list */
+.social {
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: space-around;
+  padding: 24px 16px 32px;
+}
+/* loyal customers  list*/
+.customers-logo {
+  margin-bottom: 0px;
+  margin-top: 50px;
+  display: flex;
+}
+.customer-logo-pic + .customer-logo-pic {
+  margin-left: 30px;
+}
+/* Loyal custumers title*/
+.customers .title {
+  margin-bottom: 0px;
+  margin-top: 94px;
+}
+
 /* Footer */
+
 .footer {
   background-color: #2f303a;
+
+  padding-top: 94px;
+}
+/* Footer content */
+.footer-container {
+  display: inline-block;
 }
 /* Physical addres going with other color */
 .phys-address {
@@ -158,6 +292,15 @@ focus and hover */
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--alternative-text-color);
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+/* mail and telephone footer color */
+.adress {
+  color: var(--secondary-text-color);
+  margin-bottom: 0px;
+  margin-top: 9px;
+  display: inline-block;
 }
 /* Subscibe tittle */
 .subscribe-title {
@@ -174,6 +317,18 @@ focus and hover */
 .portfolio-filter :hover,
 .portfolio-filter :focus {
   color: var(--accent-color);
+}
+.portfolio-filter {
+  margin-top: 94px;
+  margin-bottom: 0px;
+}
+
+.portfolio-title {
+  display: none;
+}
+.portfolio {
+  margin-bottom: 0px;
+  margin-top: 50px;
 }
 /* name of works in portfolio */
 .portfolio-title {
@@ -195,3 +350,15 @@ focus and hover */
   line-height: 1.6;
   letter-spacing: 0.03em;
 }
+.filter-name {
+  display: inline-block;
+  background: #f5f4fa;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding: 6px 22px;
+}
+/* CEnetering of content groups */
