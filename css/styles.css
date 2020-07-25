@@ -214,8 +214,10 @@ focus and hover */
 /* team */
 .team {
   background-color: #f5f4fa;
+  width: auto;
 }
 .team-item {
+  width: calc * ((100% - 90px) / 3);
   margin-left: 30px;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
@@ -279,13 +281,27 @@ focus and hover */
 
 .footer {
   background-color: #2f303a;
-
-  padding-top: 94px;
 }
 /* Footer content */
 .footer-container {
-  display: inline-block;
+  max-width: 1230px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  flex-wrap: wrap;
 }
+.logo-footer {
+  min-width: 267px;
+}
+
+.address {
+  display: flex;
+}
+
 /* Physical addres going with other color */
 .phys-address {
   font-size: 14px;
@@ -294,6 +310,8 @@ focus and hover */
   color: var(--alternative-text-color);
   margin-top: 20px;
   margin-bottom: 0px;
+  display: flex;
+  flex-wrap: wrap;
 }
 /* mail and telephone footer color */
 .adress {
@@ -301,16 +319,33 @@ focus and hover */
   margin-bottom: 0px;
   margin-top: 9px;
   display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+}
+.subscribe-container {
+  flex-direction: column;
+  display: flex;
+
+  margin-left: 30px;
+  min-width: 272px;
 }
 /* Subscibe tittle */
 .subscribe-title {
+  color: var(--alternative-text-color);
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.4;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--alternative-text-color);
 }
+.social-footer {
+  display: flex;
+}
+.social-footer-item + .social-footer-item {
+  margin-left: 10px;
+}
+
 /* !!!!!!!!!!!!!!!!!!!!!!!!POrtfolio content!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 /* Portfolio filter effects hover and focus */
@@ -318,17 +353,66 @@ focus and hover */
 .portfolio-filter :focus {
   color: var(--accent-color);
 }
-.portfolio-filter {
-  margin-top: 94px;
-  margin-bottom: 0px;
+.portfolio-menu {
+  display: flex;
+  justify-content: center;
+}
+.portfolio-nav {
+  margin-top: 93px;
+  justify-content: center;
+}
+/* .filter-name:nth-child(n + 2) {
+  margin-left: 0px;
+} */
+.filter-name {
+  padding: 6px 22px;
+  margin-left: 8px;
+
+  display: inline-block;
+
+  text-align: center;
+
+  background: #f5f4fa;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+}
+.filter-name:first-child {
+  margin-left: 0px;
 }
 
-.portfolio-title {
+.portfolio-notitle {
   display: none;
 }
+.container-portfolio {
+  padding: 0px 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 94px;
+}
+.portfolio-nav {
+}
+
 .portfolio {
   margin-bottom: 0px;
   margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.porfolio-item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #eeeeee;
+}
+
+.porfolio-item:nth-child(3n) {
+  margin-right: 0;
+}
+.porfolio-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
 /* name of works in portfolio */
 .portfolio-title {
@@ -336,6 +420,7 @@ focus and hover */
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  padding: 0px 24px 0px;
 }
 /* Work descriptions in portfolio */
 .portfolio-dsc {
@@ -343,22 +428,12 @@ focus and hover */
   line-height: 1.9;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+  padding: 0px 24px;
 }
 /* text on pics  */
 .portfolio-text {
   font-size: 18px;
   line-height: 1.6;
   letter-spacing: 0.03em;
-}
-.filter-name {
-  display: inline-block;
-  background: #f5f4fa;
-  border-radius: 4px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  text-align: center;
-  letter-spacing: 0.03em;
-  padding: 6px 22px;
 }
 /* CEnetering of content groups */
