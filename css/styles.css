@@ -42,7 +42,7 @@ a {
 }
 
 .container {
-  width: 1230px;
+  width: 1200px;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -112,6 +112,9 @@ focus and hover */
 .contacts .item {
   margin: 0 auto;
 }
+.contacts-text {
+  color: #757575;
+}
 /* allTitles H2 */
 .title {
   font-weight: 700;
@@ -121,9 +124,27 @@ focus and hover */
   letter-spacing: 0.03em;
 }
 /* Hero */
+.cotainer-hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
 .hero {
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../images/Header-img.jpg);
+  background-color: #212121;
+  width: 1600px;
+  height: 600px;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   text-align: center;
 }
+
 /* Hero title */
 .hero-title {
   font-weight: 900;
@@ -400,6 +421,7 @@ focus and hover */
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .porfolio-item {
   width: calc((100% - 60px) / 3);
@@ -416,11 +438,13 @@ focus and hover */
 }
 /* name of works in portfolio */
 .portfolio-title {
+  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
-  padding: 0px 24px 0px;
+  letter-spacing: 0.03em;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 /* Work descriptions in portfolio */
 .portfolio-dsc {
